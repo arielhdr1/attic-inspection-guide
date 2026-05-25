@@ -7,7 +7,7 @@ Responsive, mobile-first attic inspection card guide based on the provided infog
 - `index.html` - editable card content and export controls
 - `styles.css` - responsive layout, 1080x1920 card ratio, print styles
 - `script.js` - carousel navigation
-- `assets/source-infographic.jpg` - original reference image
+- `assets/` - folder for future attic photos or exported visual assets
 
 ## Run
 
