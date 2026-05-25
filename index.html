@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attic Inspection Guide</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Mobile Field Guide</p>
+        <h1>Attic Inspection Guide</h1>
+        <p class="lede">Swipe through practical attic checks for leaks, framing, airflow, insulation, wiring, pests, heat damage, exhaust, and access safety.</p>
+      </div>
+      <div class="toolbar" aria-label="Guide controls">
+        <button class="nav-button" id="prevBtn" type="button" aria-label="Previous card">&lt;</button>
+        <button class="nav-button" id="nextBtn" type="button" aria-label="Next card">&gt;</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="carousel-shell">
+        <div class="carousel" id="cardCarousel" aria-label="Attic inspection cards">
+          <section class="guide-card cover-card theme-cover" data-risk="Low">
+            <div class="card-top">
+              <span class="progress">1 / 14</span>
+              <span class="risk low">Low Risk</span>
+            </div>
+            <div class="cover-mark">AI</div>
+            <div class="cover-copy">
+              <p class="eyebrow">Homeowner Attic Check</p>
+              <h2>Attic Inspection Guide</h2>
+              <p>Find early warning signs before they become leaks, mold, unsafe wiring, structural damage, or wasted energy.</p>
+            </div>
+            <div class="hero-panel attic-lines" role="img" aria-label="Stylized attic roof framing">
+              <span class="callout one">Look above, below, and behind</span>
+              <span class="callout two">Stop when conditions feel unsafe</span>
+            </div>
+            <div class="sections compact-sections">
+              <article><h3>Look For</h3><p>Leaks, mold, unsafe wiring, weak framing, poor airflow, and blocked access.</p></article>
+              <article><h3>Why It Matters</h3><p>Attic clues often reveal hidden problems early.</p></article>
+              <article><h3>Action</h3><p>Use this guide on site and call a pro for hazards.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-safety" data-risk="High">
+            <div class="card-top"><span class="progress">2 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">!</span><h2>Safety First</h2></div>
+            <div class="photo-block safety-photo">
+              <span class="photo-label">Attic safety setup photo here</span>
+              <span class="arrow a1"></span><span class="tag t1">PPE</span>
+              <span class="arrow a2"></span><span class="tag t2">stable footing</span>
+            </div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Respirator, gloves, eye protection, long sleeves</li><li>Bright lighting and a clear exit path</li><li>Safe boards or platforms for footing</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Ceiling drywall is not built to hold body weight, and attic hazards can be hidden.</p></article>
+              <article><h3>Action</h3><p>Do not enter if the attic is hot, cramped, contaminated, or electrically unsafe.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-map" data-risk="Low">
+            <div class="card-top"><span class="progress">3 / 14</span><span class="risk low">Low Risk</span></div>
+            <div class="card-title"><span class="icon">#</span><h2>What We'll Cover</h2></div>
+            <div class="category-grid" aria-label="Inspection categories">
+              <span>Moisture</span><span>Structure</span><span>Ventilation</span><span>Insulation</span><span>Electrical</span><span>HVAC</span><span>Pests</span><span>Fire</span><span>Chimney</span><span>Access</span>
+            </div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Water, movement, airflow, heat, wiring, pests, and clearances</li><li>Changes near penetrations, corners, and exterior walls</li></ul></article>
+              <article><h3>Why It Matters</h3><p>The attic often shows problems before living spaces do.</p></article>
+              <article><h3>Action</h3><p>Move slowly, photograph concerns, and call a specialist for hazards.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-moisture" data-risk="High">
+            <div class="card-top"><span class="progress">4 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">~</span><h2>Moisture & Leaks</h2></div>
+            <div class="photo-block moisture-photo"><span class="photo-label">Attic moisture photo here</span><span class="arrow a1"></span><span class="tag t1">stained decking</span><span class="arrow a2"></span><span class="tag t2">rusted nails</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Water stains on sheathing or rafters</li><li>Damp, soft, or spongy wood</li><li>Moldy odor or visible growth</li><li>Rusty nails or metal connectors</li><li>Daylight through roof decking</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Moisture can lead to rot, mold, insulation damage, and structural repairs.</p></article>
+              <article><h3>Action</h3><p>Trace stains upward, photograph the area, and schedule roof or flashing repair.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-structure" data-risk="High">
+            <div class="card-top"><span class="progress">5 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">ST</span><h2>Structure & Framing</h2></div>
+            <div class="photo-block framing-photo"><span class="photo-label">Rafter and truss photo here</span><span class="arrow a1"></span><span class="tag t1">split rafter</span><span class="arrow a2"></span><span class="tag t2">missing connector</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Cracked, bowed, or sagging rafters</li><li>Cut, notched, or modified trusses</li><li>Loose plates, ties, nails, or hangers</li><li>Gaps, settlement, or uneven roof lines</li><li>Temporary or DIY repairs</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Structural defects can compromise roof safety and become expensive quickly.</p></article>
+              <article><h3>Action</h3><p>Do not disturb framing. Have a qualified contractor or engineer evaluate it.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-vent" data-risk="Medium">
+            <div class="card-top"><span class="progress">6 / 14</span><span class="risk medium">Medium Risk</span></div>
+            <div class="card-title"><span class="icon">VE</span><h2>Ventilation</h2></div>
+            <div class="photo-block vent-photo"><span class="photo-label">Attic vent and baffle photo here</span><span class="arrow a1"></span><span class="tag t1">blocked soffit</span><span class="arrow a2"></span><span class="tag t2">air channel</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Soffit vents blocked by insulation</li><li>Ridge, gable, or roof vents present</li><li>Baffles at soffits where needed</li><li>Extreme heat or stale air</li><li>Bath fans venting into attic</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Poor airflow raises energy costs and encourages mold, rot, and ice dams.</p></article>
+              <article><h3>Action</h3><p>Clear blocked intake paths and route exhaust ducts outdoors.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-insulation" data-risk="Medium">
+            <div class="card-top"><span class="progress">7 / 14</span><span class="risk medium">Medium Risk</span></div>
+            <div class="card-title"><span class="icon">IN</span><h2>Insulation</h2></div>
+            <div class="photo-block insulation-photo"><span class="photo-label">Insulation depth photo here</span><span class="arrow a1"></span><span class="tag t1">thin area</span><span class="arrow a2"></span><span class="tag t2">stain</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Depth appropriate for your climate</li><li>Even coverage across attic floor</li><li>Compressed or disturbed spots</li><li>Wet, stained, or moldy insulation</li><li>Gaps around lights, vents, and walls</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Weak insulation wastes energy and can hide moisture or pest problems.</p></article>
+              <article><h3>Action</h3><p>Air seal first, then restore depth with clean, dry insulation.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-electrical" data-risk="High">
+            <div class="card-top"><span class="progress">8 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">EL</span><h2>Electrical</h2></div>
+            <div class="photo-block electric-photo"><span class="photo-label">Attic wiring photo here</span><span class="arrow a1"></span><span class="tag t1">open box</span><span class="arrow a2"></span><span class="tag t2">overheated wire</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Exposed wiring or loose cables</li><li>Open junction boxes</li><li>Improper splices or connectors</li><li>Damaged or overheated wires</li><li>Recessed lights buried in insulation</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Electrical defects can cause shock, fire, and hidden overheating.</p></article>
+              <article><h3>Action</h3><p>Do not touch suspect wiring. Call a licensed electrician.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-hvac" data-risk="Medium">
+            <div class="card-top"><span class="progress">9 / 14</span><span class="risk medium">Medium Risk</span></div>
+            <div class="card-title"><span class="icon">HV</span><h2>HVAC & Mechanical</h2></div>
+            <div class="photo-block hvac-photo"><span class="photo-label">Attic ductwork photo here</span><span class="arrow a1"></span><span class="tag t1">loose duct</span><span class="arrow a2"></span><span class="tag t2">condensation</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Ducts connected and sealed</li><li>Crushed, torn, or disconnected runs</li><li>Insulation on ducts</li><li>Condensation on equipment</li><li>Supported mechanical components</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Leaks waste energy, reduce comfort, and can create mold conditions.</p></article>
+              <article><h3>Action</h3><p>Seal duct leaks, support equipment, and route fans to the exterior.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-pests" data-risk="Medium">
+            <div class="card-top"><span class="progress">10 / 14</span><span class="risk medium">Medium Risk</span></div>
+            <div class="card-title"><span class="icon">PE</span><h2>Pests & Rodents</h2></div>
+            <div class="photo-block pest-photo"><span class="photo-label">Rodent evidence photo here</span><span class="arrow a1"></span><span class="tag t1">droppings</span><span class="arrow a2"></span><span class="tag t2">entry gap</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Droppings or urine stains</li><li>Nests or shredded insulation</li><li>Chewed wires, wood, or duct liners</li><li>Insect wings, casings, or frass</li><li>Gaps at vents or roof edges</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Pests can damage wiring, contaminate insulation, and create entry paths.</p></article>
+              <article><h3>Action</h3><p>Seal entry points after removal and replace contaminated insulation.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-fire" data-risk="High">
+            <div class="card-top"><span class="progress">11 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">FI</span><h2>Fire & Heat Damage</h2></div>
+            <div class="photo-block fire-photo"><span class="photo-label">Scorch mark photo here</span><span class="arrow a1"></span><span class="tag t1">charred wood</span><span class="arrow a2"></span><span class="tag t2">hot fixture</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Charred or blackened wood</li><li>Scorch marks near chimneys or flues</li><li>Overheated wiring or devices</li><li>Melted insulation or plastic</li><li>Combustibles too close to heat sources</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Heat damage may point to past fires or an active fire hazard.</p></article>
+              <article><h3>Action</h3><p>Stop inspection and call a pro if you see charring or overheating.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-chimney" data-risk="High">
+            <div class="card-top"><span class="progress">12 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">CH</span><h2>Chimney & Exhaust</h2></div>
+            <div class="photo-block chimney-photo"><span class="photo-label">Chimney penetration photo here</span><span class="arrow a1"></span><span class="tag t1">flashing leak</span><span class="arrow a2"></span><span class="tag t2">clearance</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Proper flashing around chimney</li><li>Cracked or deteriorated masonry</li><li>Gaps between chimney and framing</li><li>Soot stains or flue leaks</li><li>Vents that end inside the attic</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Bad clearances and leaks can cause fire risk, moisture, and exhaust issues.</p></article>
+              <article><h3>Action</h3><p>Keep combustibles clear and have chimney, roof, or vent defects repaired.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card theme-access" data-risk="High">
+            <div class="card-top"><span class="progress">13 / 14</span><span class="risk high">High Risk</span></div>
+            <div class="card-title"><span class="icon">SA</span><h2>Safety & Access</h2></div>
+            <div class="photo-block access-photo"><span class="photo-label">Attic ladder and access photo here</span><span class="arrow a1"></span><span class="tag t1">secure ladder</span><span class="arrow a2"></span><span class="tag t2">sharp edge</span></div>
+            <div class="sections">
+              <article><h3>Look For</h3><ul><li>Access opening large enough to enter</li><li>Ladder or stairs secure and stable</li><li>Walkways or platforms where needed</li><li>Exposed nails, screws, or sharp edges</li><li>Asbestos or vermiculite insulation</li></ul></article>
+              <article><h3>Why It Matters</h3><p>Access problems create injury risk before the inspection even begins.</p></article>
+              <article><h3>Action</h3><p>Use proper lighting, stay on framing or platforms, and avoid suspect insulation.</p></article>
+            </div>
+          </section>
+
+          <section class="guide-card checklist-card theme-checklist" data-risk="Low">
+            <div class="card-top"><span class="progress">14 / 14</span><span class="risk low">Low Risk</span></div>
+            <div class="card-title"><span class="icon">OK</span><h2>Quick Checklist</h2></div>
+            <div class="sections compact-sections">
+              <article><h3>Look For</h3><p>Check each major attic system before leaving the access area.</p></article>
+              <article><h3>Why It Matters</h3><p>A simple pass prevents missed hazards.</p></article>
+              <article><h3>Action</h3><p>Mark what you saw, photograph concerns, and refer unsafe items.</p></article>
+            </div>
+            <div class="checklist">
+              <label><input type="checkbox"> Moisture stains, mold, rust, or daylight checked</label>
+              <label><input type="checkbox"> Rafters, trusses, and connectors checked</label>
+              <label><input type="checkbox"> Intake and exhaust ventilation checked</label>
+              <label><input type="checkbox"> Insulation depth, gaps, and stains checked</label>
+              <label><input type="checkbox"> Wiring, boxes, and fixtures checked from a safe distance</label>
+              <label><input type="checkbox"> Ducts, fans, and mechanical equipment checked</label>
+              <label><input type="checkbox"> Pest evidence and entry gaps checked</label>
+              <label><input type="checkbox"> Fire, heat, chimney, and exhaust clearances checked</label>
+              <label><input type="checkbox"> Access, lighting, footing, and PPE checked</label>
+              <label><input type="checkbox"> Photos taken and unsafe items referred to a pro</label>
+            </div>
+            <div class="final-note">When in doubt, stop the inspection. A useful attic guide should keep the homeowner out of trouble, not invite them deeper into it.</div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
