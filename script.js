@@ -1,17 +1,15 @@
-const carousel = document.querySelector("#cardCarousel");
-const cards = Array.from(document.querySelectorAll(".guide-card"));
-
+const deck = document.querySelector(".deck");
+const cards = Array.from(document.querySelectorAll(".card"));
 let activeIndex = 0;
 
 function goToCard(index) {
   activeIndex = Math.max(0, Math.min(cards.length - 1, index));
-  cards[activeIndex].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  cards[activeIndex].scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
 }
 
 function syncActiveCard() {
-  const carouselRect = carousel.getBoundingClientRect();
-  const center = carouselRect.left + carouselRect.width / 2;
-  let nearest = 0;
+  const center = deck.getBoundingClientRect().left + deck.clientWidth / 2;
+  let nearest = activeIndex;
   let nearestDistance = Infinity;
 
   cards.forEach((card, index) => {
@@ -26,7 +24,7 @@ function syncActiveCard() {
   activeIndex = nearest;
 }
 
-carousel.addEventListener("scroll", () => window.requestAnimationFrame(syncActiveCard), { passive: true });
+deck.addEventListener("scroll", () => requestAnimationFrame(syncActiveCard), { passive: true });
 
 window.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") goToCard(activeIndex + 1);
