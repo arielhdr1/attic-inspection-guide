@@ -1,17 +1,17 @@
-# Attic Inspection Guide
+# Attic Inspection Field Guide
 
-Responsive, mobile-first attic inspection card guide based on the provided infographic reference. The guide is built as editable HTML cards, not as one giant poster image.
+Mobile-first attic inspection infographic built as a static HTML/CSS/JS swipe deck.
 
 ## Files
 
-- `index.html` - editable card content
-- `styles.css` - full-screen swipe layout, embedded card photos, and print styles
-- `script.js` - carousel navigation
-- `assets/` - source reference image and cropped photo assets used to build the embedded CSS images
+- `index.html` - editable inspection content
+- `styles.css` - full-screen mobile card layout and CSS-built infographic visuals
+- `script.js` - swipe state and keyboard navigation
+- `assets/` - optional folder for future photos or exports
 
 ## Run
 
-Open `index.html` directly in a browser, or run a simple local server:
+Open `index.html` directly in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8080
@@ -23,18 +23,6 @@ Then open:
 http://localhost:8080
 ```
 
-## Print
+## Notes
 
-Use the browser print dialog for print-ready output.
-
-## Editing
-
-All inspection text is in `index.html`. Each card is a `<section class="guide-card">` and keeps the same editable structure:
-
-- progress indicator
-- risk badge
-- title and icon
-- annotated image placeholder
-- `Look For`, `Why It Matters`, and `Action`
-
-Image placeholders can be replaced later with real attic photos while keeping the same card layout.
+The guide is self-contained. Visuals are drawn in CSS, so the mobile deck will not lose images when hosted as a static site.
