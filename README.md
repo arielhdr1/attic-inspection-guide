@@ -5,9 +5,9 @@ Responsive, mobile-first attic inspection card guide based on the provided infog
 ## Files
 
 - `index.html` - editable card content
-- `styles.css` - full-screen swipe layout and print styles
+- `styles.css` - full-screen swipe layout, embedded card photos, and print styles
 - `script.js` - carousel navigation
-- `assets/` - folder for future attic photos or exported visual assets
+- `assets/` - source reference image and cropped photo assets used to build the embedded CSS images
 
 ## Run
 
